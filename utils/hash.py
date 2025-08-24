@@ -47,6 +47,8 @@ def hash_function(id_usuario: str) -> int:
         return -1
 
 
-        
+
+
+
 
 
