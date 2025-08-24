@@ -4,11 +4,10 @@ on:
   push:
     branches:
       - master
-      - main
+      
   pull_request:
     branches:
       - master
-      - main
 
 jobs:
   bump-version:
@@ -45,7 +44,6 @@ jobs:
 
     - name: Push cambios y tags
       env:
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TOKEN: ${{ secrets.PAT_TOKEN }}
       run: |
-        git push origin master
-        git push origin --tags
+        git push https://x-access-token:${TOKEN}@github.com/${{ github.repository }} HEAD:master --tags
