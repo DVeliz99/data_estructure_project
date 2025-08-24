@@ -36,14 +36,14 @@ jobs:
         git config user.name "github-actions"
         git config user.email "github-actions@github.com"
 
-        # Intentar obtener el siguiente tag
-        NEXT_TAG=$(cz bump --get-next 2>&1) || true
+        # Obtener el siguiente tag automáticamente (no interactivo)
+        NEXT_TAG=$(cz bump --get-next --yes 2>&1) || true
 
         # Si no hay commits elegibles, crear commit temporal
         if echo "$NEXT_TAG" | grep -q '\[NO_COMMITS_TO_BUMP\]'; then
           echo "No commits elegibles para bump. Creando commit temporal..."
           git commit --allow-empty -m "chore: version bump check"
-          NEXT_TAG=$(cz bump --get-next)
+          NEXT_TAG=$(cz bump --get-next --yes)
         fi
 
         NEXT_TAG="v$NEXT_TAG"
