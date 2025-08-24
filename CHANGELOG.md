@@ -1,3 +1,9 @@
+## 0.3.0 (2025-08-24)
+
+### Feat
+
+- **archive.py-&-hash.py**: añadir validación de dirección
+
 ## 0.2.0 (2025-08-24)
 
 ### Feat
