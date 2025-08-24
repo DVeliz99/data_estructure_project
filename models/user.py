@@ -1,8 +1,8 @@
 class User:
-    def __init__(self, id_usuario, nombre, correo):
+    def __init__(self, id_usuario, nombre, correo,acceso):
         self.id_usuario = id_usuario
         self.nombre = nombre
         self.correo = correo
-        self.accesos = []  # Lista de fechas/hora de acceso
+        self.acceso=acceso # Lista de fechas/hora de acceso
     
     
