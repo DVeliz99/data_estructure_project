@@ -3,6 +3,8 @@ class User:
         self.id_usuario = id_usuario
         self.nombre = nombre
         self.correo = correo
-        self.acceso=acceso # Lista de fechas/hora de acceso
-    
-    
+        self.acceso=acceso 
+        
+        
+        
+        
