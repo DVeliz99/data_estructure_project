@@ -7,4 +7,5 @@ if __name__ == "__main__":
     carpeta = "data"
 
     # Inicializar la tabla hash en el archivo
-    hash.initialize_hash_table(size, nombre_archivo, carpeta)
+    #hash.initialize_hash_table(size, nombre_archivo, carpeta)
+    print(hash.hash_function("00EZ"))
