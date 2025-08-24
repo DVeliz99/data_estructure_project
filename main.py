@@ -1,4 +1,4 @@
-from utils import hash
+from utils import hash, archive
 
 if __name__ == "__main__":
     # Parámetros de prueba
@@ -8,4 +8,4 @@ if __name__ == "__main__":
 
     # Inicializar la tabla hash en el archivo
     #hash.initialize_hash_table(size, nombre_archivo, carpeta)
-    print(hash.hash_function("00EZ"))
+print(archive.is_address_empty(nombre_archivo, carpeta, hash.hash_function("80ZZ"))) 
