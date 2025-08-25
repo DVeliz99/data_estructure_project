@@ -1,3 +1,9 @@
+## 0.4.0 (2025-08-25)
+
+### Feat
+
+- añadir usuario a tabla hash
+
 ## 0.3.0 (2025-08-24)
 
 ### Feat

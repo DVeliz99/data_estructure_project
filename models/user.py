@@ -16,7 +16,6 @@ class User:
         self.nombre = nombre
         self.correo = correo
 
-
         hash_address = hash.hash_function(self.id_usuario)
 
         try:
