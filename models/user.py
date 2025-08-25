@@ -33,6 +33,7 @@ class User:
                 "correo": self.correo,
                 "acceso": self.acceso
                 
+
                 }
 
                 # Sobrescribir el archivo con la tabla actualizada

@@ -1,3 +1,9 @@
+## 0.4.1 (2025-08-25)
+
+### Fix
+
+- corregir método de inserción de usuario
+
 ## 0.4.0 (2025-08-25)
 
 ### Feat
