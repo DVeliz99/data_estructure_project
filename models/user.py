@@ -4,11 +4,11 @@ import os
 import json
 
 class User:
-    def __init__(self, id_usuario, nombre, correo,acceso):
+    def __init__(self, id_usuario, nombre, correo):
         self.id_usuario = id_usuario
         self.nombre = nombre
         self.correo = correo
-        self.acceso=acceso 
+        self.acceso=None 
         
     def insert_user(self, id_usuario, nombre, correo, acceso):
     
@@ -30,7 +30,10 @@ class User:
                 tabla_hash[hash_address] = {
                 "id_usuario": self.id_usuario,
                 "nombre": self.nombre,
-                "correo": self.correo
+                "correo": self.correo,
+                "acceso": self.acceso
+                
+
                 }
 
                 # Sobrescribir el archivo con la tabla actualizada
@@ -47,6 +50,24 @@ class User:
         except Exception as e:
             print(f"Error al insertar usuario: {e}")
         return False
+    
+    def get_user_info(self, id_usuario):
+    
+        try:
+            hash_address = hash.hash_function(id_usuario)
+            ruta = archive.get_archive_path(USUARIOS_FILE, DATA_FOLDER)
+            tabla_hash = archive.read_archive(ruta)
+
+            if 0 <= hash_address < len(tabla_hash) and tabla_hash[hash_address] is not None:
+                return tabla_hash[hash_address]
+            else:
+                print(f"No se encontró información para el ID de usuario '{id_usuario}'.")
+            return None
+
+        except Exception as e:
+            print(f"Error al obtener información del usuario: {e}")
+            return None
+
 
             
             
