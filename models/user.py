@@ -15,7 +15,6 @@ class User:
         self.id_usuario = id_usuario
         self.nombre = nombre
         self.correo = correo
-        self.acceso = acceso
 
         hash_address = hash.hash_function(self.id_usuario)
 
@@ -31,8 +30,7 @@ class User:
                 tabla_hash[hash_address] = {
                 "id_usuario": self.id_usuario,
                 "nombre": self.nombre,
-                "correo": self.correo,
-                "acceso": self.acceso
+                "correo": self.correo
                 }
 
                 # Sobrescribir el archivo con la tabla actualizada
