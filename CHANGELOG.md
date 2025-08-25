@@ -1,3 +1,9 @@
+## 0.5.0 (2025-08-25)
+
+### Feat
+
+- añadir la obtención de información del usuario
+
 ## 0.4.1 (2025-08-25)
 
 ### Fix
