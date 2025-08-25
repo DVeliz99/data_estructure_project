@@ -66,6 +66,7 @@ if __name__ == "__main__":
     
 
     
+
     # usuario = User("12AB", "", "","")
     # info = usuario.get_user_info("12AB")
 
@@ -75,6 +76,7 @@ if __name__ == "__main__":
     #     print("Usuario no encontrado o error.")
     
     
+
 
 
 
