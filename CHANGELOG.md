@@ -1,3 +1,13 @@
+## 0.7.0 (2025-08-26)
+
+### Feat
+
+- **implementa-pilas-por-ID-y-persiste-el-tope-en-archivo**: agrega gestion de accesos con pilas por id
+
+### Refactor
+
+- ignorar documento de texto (#2)
+
 ## 0.6.0 (2025-08-25)
 
 ### Feat
