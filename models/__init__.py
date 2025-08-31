@@ -1,7 +1,5 @@
 #indica que la carpeta es un paquete
-#from .user import User
-#from .access import Access
+from .access import Access
+from .user import User
 
-
-# __all__ define lo que se importa con from models import *
-#__all__ = ["User", "Access"]
+__all__ = ["Access", "User"]
