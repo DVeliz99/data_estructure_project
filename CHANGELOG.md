@@ -1,3 +1,9 @@
+## 0.7.1 (2025-08-31)
+
+### Fix
+
+- Corregir inicialización de modelos (#15)
+
 ## 0.7.0 (2025-08-26)
 
 ### Feat
