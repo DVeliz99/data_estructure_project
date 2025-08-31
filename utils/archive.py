@@ -1,7 +1,3 @@
-#verificar dirección en el archivo
-#insertar valor en la dirección
-#obtener información de la dirección
-#Verificar si la direccion no esta vacía
 import os
 import json
 
